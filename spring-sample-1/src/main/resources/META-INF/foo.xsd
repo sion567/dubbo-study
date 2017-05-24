@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://sion567.cc/schema/foo"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:beans="http://www.springframework.org/schema/beans"
+            targetNamespace="http://sion567.cc/schema/foo"
+            elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+    <xsd:annotation>
+        <xsd:documentation>spring customer tag</xsd:documentation>
+    </xsd:annotation>
+
+        <xsd:element name="cc" type="myType" />
+
+        <xsd:complexType name="myType">
+            <xsd:attribute name="id" type="xsd:ID" />
+            <xsd:attribute name="remark" type="xsd:string" />
+        </xsd:complexType>
+
+    <!--
+            <xsd:import namespace="http://www.springframework.org/schema/beans" />
+            <xsd:element name="cc">
+                <xsd:complexType>
+                    <xsd:complexContent>
+                        <xsd:extension base="beans:identifiedType">
+                            <xsd:attribute name="remark" type="xsd:string" />
+                        </xsd:extension>
+                    </xsd:complexContent>
+                </xsd:complexType>
+            </xsd:element>
+    -->
+
+
+    </xsd:schema>

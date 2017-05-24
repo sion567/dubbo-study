@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:people="http://sion567.cc/schema/people"
+       xmlns:foo="http://sion567.cc/schema/foo"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://sion567.cc/schema/people http://sion567.cc/schema/people.xsd
+        http://sion567.cc/schema/foo http://sion567.cc/schema/foo.xsd">
+
+    <foo:cc id="test" remark="this is a my custom tag" />
+
+
+    <people:student id="student1" name="student1" age="18" />
+    <people:student id="student2" name="student2" age="20" />
+
+
+
+</beans>
